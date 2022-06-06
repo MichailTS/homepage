@@ -173,3 +173,46 @@ body {
   color: #2a7da2;
   font-size: 16px;
 }
+
+.about .container_skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 1000px) {
+  .about .container_skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about .container_skills h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.skills .box h4 {
+  color: #848c99;
+  font-weight: 500;
+}
+.skills .box .percent {
+  position: relative;
+  left: 20px;
+  width: 80%;
+  height: 10px;
+  background: #dbdbdb;
+  padding-left: 20px;
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
