@@ -71,6 +71,36 @@ body {
   line-height: 1em;
 }
 
+.contactInfo {
+  padding-top: 40px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  list-style: none;
+  position: relative;
+  margin: 10px 0;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li .text {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+
 .container .right_Side {
   position: relative;
   background: #fff;
