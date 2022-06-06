@@ -46,6 +46,7 @@ body {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0 0 10px black;
 }
 .profileText .imgBox img {
   position: absolute;
@@ -140,7 +141,7 @@ body {
 }
 
 .about {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .about:last-child {
   margin-bottom: 0;
@@ -153,6 +154,19 @@ body {
 }
 .about p {
   color: #333;
+}
+.intersting_facts {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.intersting_facts ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.intersting_facts ul li {
+  margin-top: 10px;
+  list-style: circle;
 }
 
 .about .box {
@@ -251,6 +265,10 @@ body {
   }
   .skills .box {
     grid-template-columns: 1fr;
+  }
+  .intersting_facts ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 400px) {
