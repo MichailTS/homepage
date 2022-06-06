@@ -178,11 +178,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-@media screen and (max-width: 1000px) {
-  .about .container_skills {
-    grid-template-columns: 1fr;
-  }
-}
 
 .about .container_skills h4 {
   text-transform: uppercase;
@@ -207,7 +202,6 @@ body {
   width: 80%;
   height: 10px;
   background: #dbdbdb;
-  padding-left: 20px;
 }
 .skills .box .percent div {
   position: absolute;
@@ -215,4 +209,52 @@ body {
   left: 0;
   height: 100%;
   background: #03a9f4;
+}
+
+.interests ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.interests ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.interests ul li .fa-solid {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 30px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .interests ul {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about .container_skills {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .about .box {
+    flex-direction: column;
+  }
+  .about .box .year_company {
+    margin-bottom: 5px;
+  }
+  .skills .box {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 400px) {
+  .interests ul {
+    grid-template-columns: 1fr;
+  }
 }
